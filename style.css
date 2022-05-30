@@ -1,0 +1,75 @@
+    * {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    @font-face {
+        font-family: myFont1;
+        src: url(./fonts/Quicksand-Regular.ttf);
+    }
+    
+    .container1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .greeting {
+        font-size: 23px;
+        font-family: myFont1, Arial, Helvetica, sans-serif;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    
+    .chris {
+        width: 60px;
+        border-radius: 10%;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10%;
+        position: relative;
+        left: 10px;
+    }
+    
+    .wrapper {
+        display: grid;
+        justify-content: center;
+    }
+    
+    .container2 {
+        display: flex;
+        background-color: rgb(186, 183, 183);
+        padding: 10px;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        text-align: center;
+    }
+    /* .beach {
+        width: 350px;
+        background-color: rgb(186, 183, 183);
+    } */
+    
+    .introduction {
+        line-height: 22px;
+        background-color: rgb(255, 255, 255);
+        background-color: rgb(186, 183, 183);
+        font-size: 13px;
+        max-width: 300px;
+    }
+    
+    .molding {
+        background-color: rgb(186, 183, 183);
+        text-decoration: none;
+        color: blue;
+        font-family: myFont1, Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    .molding:hover {
+        color: rgb(204, 255, 1);
+    }
