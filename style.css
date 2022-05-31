@@ -1,10 +1,15 @@
     * {
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(233, 233, 233);
     }
     
     @font-face {
         font-family: myFont1;
         src: url(./fonts/Quicksand-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: myFont2;
+        src: url(./fonts/Caveat-Regular.ttf);
     }
     
     .container1 {
@@ -16,60 +21,78 @@
     }
     
     .greeting {
-        font-size: 23px;
+        font-size: 30px;
         font-family: myFont1, Arial, Helvetica, sans-serif;
         grid-column-start: 2;
         grid-column-end: 2;
+        color: rgb(0, 0, 0);
+    }
+    
+    .name {
+        rotate: -25deg;
+        position: absolute;
+        top: 1px;
+        left: 4px;
+        font-family: myFont2;
+        background: none;
+        font-size: 21px;
+        color: rgb(0, 0, 0);
     }
     
     .chris {
         width: 60px;
         border-radius: 10%;
-        grid-column-start: 3;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
         border-style: solid;
         border-width: 1px;
         border-color: rgb(0, 0, 0);
         border-radius: 10%;
+        margin-left: 50px;
         position: relative;
-        left: 10px;
+        top: 10px;
+        left: 15px;
     }
     
     .wrapper {
-        display: grid;
+        display: flex;
         justify-content: center;
     }
     
     .container2 {
         display: flex;
-        background-color: rgb(186, 183, 183);
+        /* background-image: url('./images/panama_city_beach_by_kihoskh714_dbq8nh0.webp'); */
         padding: 10px;
         border-width: 1px;
         border-color: black;
         border-style: solid;
         text-align: center;
+        border-radius: 5%;
+        background-image: radial-gradient(rgb(255, 255, 255, 0), rgb(161, 161, 161, .2));
+        opacity: 1;
     }
     /* .beach {
-        width: 350px;
-        background-color: rgb(186, 183, 183);
+        opacity: .3;
     } */
     
     .introduction {
-        line-height: 22px;
-        background-color: rgb(255, 255, 255);
-        background-color: rgb(186, 183, 183);
+        line-height: 20px;
         font-size: 13px;
         max-width: 300px;
+        border-radius: 3%;
+        background: none;
+        color: rgb(0, 0, 0);
+        font-family: myfont1, Arial, Helvetica, sans-serif;
     }
     
     .molding {
-        background-color: rgb(186, 183, 183);
         text-decoration: none;
-        color: blue;
+        color: rgb(17, 0, 255);
         font-family: myFont1, Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 13px;
+        background: none;
     }
     
     .molding:hover {
-        color: rgb(204, 255, 1);
+        color: rgb(255, 1, 1);
     }
